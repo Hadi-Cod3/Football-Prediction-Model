@@ -51,13 +51,6 @@ The final model (Attempt 2) meaningfully outperforms the naive baseline and show
 
 **Known limitation:** draws remain very hard to predict (4% recall). This is expected, since draws don't correlate as cleanly with team strength as wins do; two closely matched teams are close to a coin flip regardless of historical form.
 
-## What I'd try next
-
-* Add team-strength features beyond identity (recent win rate, goal difference, form over last N matches)
-* Try a different model (e.g. Random Forest) and compare
-* Add head-to-head history between specific teams
-* Investigate draws specifically as their own modeling problem
-
 ## Tech stack
 
 Python, pandas, scikit-learn (`LogisticRegression`, `train\_test\_split`, `classification\_report`)
